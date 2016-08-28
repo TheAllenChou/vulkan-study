@@ -1,0 +1,545 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "premake",
+		"selected_items":
+		[
+			[
+				"premake",
+				"Build With: vulkan-study - premake"
+			],
+			[
+				"build-all",
+				"Build With: vulkan-study - build-all"
+			],
+			[
+				"clean-all",
+				"Build With: vulkan-study - clean-all"
+			],
+			[
+				"unmake",
+				"Build With: vulkan-study - unmake"
+			],
+			[
+				"prema",
+				"Build With: vulkan-study - premake"
+			],
+			[
+				"build-ship",
+				"Build With: vulkan-study - build-ship"
+			],
+			[
+				"premaek",
+				"Build With: vulkan-study - premake"
+			],
+			[
+				"build",
+				"Build With: vulkan-study - build-ship"
+			],
+			[
+				"prmake",
+				"Build With: vulkan-study - premake"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"premak",
+				"Build: premake"
+			],
+			[
+				"builddebug",
+				"Build: build-debug"
+			],
+			[
+				"unitd",
+				"Build: unit-test-debug"
+			],
+			[
+				"unittestde",
+				"Build: unit-test-debug"
+			],
+			[
+				"buildde",
+				"Build: build-debug"
+			],
+			[
+				"unittest",
+				"Build: unit-test-debug"
+			],
+			[
+				"pre",
+				"Build: premake"
+			],
+			[
+				"premkae",
+				"Build: premake"
+			],
+			[
+				"build debug",
+				"Build: build-debug"
+			],
+			[
+				"build-debug",
+				"Build: build-debug"
+			],
+			[
+				"build-",
+				"Build: build-debug"
+			],
+			[
+				"run ship",
+				"Build: run-sandbox-ship"
+			],
+			[
+				"build ship",
+				"Build: build-ship"
+			],
+			[
+				"run-sand ship",
+				"Build: run-sandbox-ship"
+			],
+			[
+				"run-sand",
+				"Build: run-sandbox-debug"
+			],
+			[
+				"build-releas",
+				"Build: build-release"
+			],
+			[
+				"rebuild",
+				"Build: rebuild-debug"
+			],
+			[
+				"build-debu",
+				"Build: build-debug"
+			],
+			[
+				"build-release",
+				"Build: build-release"
+			],
+			[
+				"un",
+				"Build: unmake"
+			],
+			[
+				"unma",
+				"Build: unmake"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"cmake",
+				"Set Syntax: CMakeEditor"
+			]
+		],
+		"width": 498.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/CJ docs/programming/C++/study/vulkan-study/src"
+	],
+	"file_history":
+	[
+		"/D/CJ docs/programming/C++/study/vulkan-study/.gitignore",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/build-all.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/build-debug.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/clean-all.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/build-ship.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/premake5.lua",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/clean-ship.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/clean-debug.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/rebuild-debug.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/premake.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/clean-release.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/rebuild-release.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/rebuild-ship.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/unmake.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/bat/build-release.bat",
+		"/D/CJ docs/programming/C++/study/vulkan-study/working/this-is-the-working-directory.txt",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/app/hellow-world/precompiled.h",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/app/hellow-world/precompiled.cpp",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/app/hellow-world/main.cpp",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/math/precompiled.h",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/app/hellow-world/dependencies.txt",
+		"/D/CJ docs/programming/C++/study/vulkan-study/vulkan-study.sublime-project",
+		"/D/CJ docs/programming/C++/study/vulkan-study/vulka-study.sublime-project",
+		"/D/CJ docs/programming/C++/study/vulkan-study/CS 550.sublime-project",
+		"/D/CJ docs/programming/C++/study/vulkan-study/CS 550.sublime-build",
+		"/D/CJ docs/programming/C++/study/vulkan-study/CS 550.sublime-workspace",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/util/precompiled.h",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/util/precompiled.cpp",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/math/precompiled.cpp",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/graphics/precompiled.h",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/graphics/precompiled.cpp",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/util/dependencies.txt",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/math/dependencies.txt",
+		"/D/CJ docs/programming/C++/study/vulkan-study/src/lib/graphics/dependencies.txt",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/detail/type_vec4.hpp",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/detail/type_vec2.inl",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/detail/type_vec2.hpp",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/gtx/normalize_dot.inl",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/gtx/normalize_dot.hpp",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/gtx/simd_vec4.hpp",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/gtx/simd_vec4.inl",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/simd/platform.h",
+		"/D/CJ docs/programming/C++/libs/GLM/glm-0.9.7.6/glm/glm/vec2.hpp",
+		"/D/CJ docs/programming/C/libs/GLFW/glfw-3.2.1.bin.WIN64/COPYING.txt",
+		"/D/CJ docs/programming/AS3/study/numeric-springing/.gitignore",
+		"/D/CJ docs/programming/AS3/study/numeric-springing/README.md",
+		"/D/Downloads/AM2R_10/readme.txt",
+		"/D/sandbox/MATLAB/springImplicitEuler.m",
+		"/D/sandbox/MATLAB/springTest.m",
+		"/D/sandbox/MATLAB/springSemiImplicitEuler.m",
+		"/D/CJ docs/programming/AS3/study/numeric-springing/matlab-tests/springTest.m",
+		"/E/GARMIN/LOCATION/LCTNS.FIT",
+		"/E/GARMIN/SETTINGS/SETTINGS.FIT",
+		"/C/Users/CJ/Dropbox/Michelle's Programming Practice/Python/Allen/Allen.sublime-workspace",
+		"/C/Users/CJ/Dropbox/Michelle's Programming Practice/Python/Allen/Allen.sublime-project",
+		"/Users/yuhsliao/Dropbox/Programming Practice/Python/Allen Sandbox/Allen Sandbox.sublime-project",
+		"/C/Users/CJ/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/core/io/InputState.cpp",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/core/io/InputCode.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/core/typedefs.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/core/time/Stopwatch.h",
+		"/C/Users/CJ/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/core/time/Stopwatch.cpp",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/graphics/dependencies.txt",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/core/io/InputState.h",
+		"/C/Users/CJ/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-settings",
+		"/C/Users/CJ/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/reflection/meta.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/reflection/metaMacros.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/util/macro/numVaArgs.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/unitTest/data/TypeDefTest.cpp",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/unitTest/data/TypeDefTest.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/core/io/InputCode.cpp",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/graphics/window/App.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/premake5.lua",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/util/window/App.cpp",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/util/input/InputState.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/util/input/InputState.cpp",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/util/window/InputState.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/src/util/window/App.h",
+		"/D/CJ docs/academic/DigiPen/2013 Fall/CS 460/project 1/source/Common/AABB.h",
+		"/D/CJ docs/projects/CJ Game Framework/dev/lib/SDL/SDL2-2.0.3/README-SDL.txt",
+		"/D/CJ docs/projects/CJ Game Framework/dev/lib/SDL/SDL2-2.0.3/README.txt",
+		"/C/Utilities/CrossBridge/samples/01_HelloWorld/Makefile",
+		"/C/Utilities/CrossBridge/samples/01_HelloWorld/bash",
+		"/D/sandbox/C++/auto/main.cpp",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/lua-lib/assets/lua_alchemy/as3/sugar.lua",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/wrapper/as3_lua_interface.c",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/wrapper/Makefile",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/Makefile",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/lua-alchemy/Makefile",
+		"/C/Utilities/CrossBridge/samples/05_SWC/Makefile",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/lua-alchemy/build.xml",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/Makefile",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/README.md",
+		"/C/Utilities/CrossBridge/samples/Makefile.common",
+		"/C/Utilities/CrossBridge/samples/01_HelloWorld/test.sh",
+		"/C/Utilities/CrossBridge/run.bat",
+		"/D/Downloads/test.bat",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/Makefile.common",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/wrapper/bridge_as3_lua.h",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/alchemy/wrapper/as3_lua_interface.h",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/05_SWC/as3api.cpp",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/demo/Barebones/src/Barebones.as",
+		"/D/CJ docs/programming/AS3/lib/LuaAlchemy/git/demo/LuaAlchemyDemo/assets/hello.lua",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/05_SWC/Makefile",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/05_SWC/swcdemo.as",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/06_SWIG/MurmurHash/Makefile",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/06_SWIG/MurmurHash/MurmurHash_wrapper.c",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/06_SWIG/MurmurHash/MurmurHash.as3",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/06_SWIG/Makefile",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/05_SWC/main.cpp",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/05_SWC/MurmurHash3.h",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/03_Drawing/voronoi.cpp",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/04_Animation/GameOfLife.cpp",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/04_Animation/Console.as",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/02_Interop/hellointerop.c",
+		"/D/CJ docs/programming/AS3/tool/CrossBridge/samples/04_Animation/Makefile",
+		"/C/Utilities/CrossBridge/samples/10_MessageChannel/Makefile",
+		"/C/Utilities/CrossBridge/samples/Makefile",
+		"/C/Utilities/CrossBridge/samples/02_Interop/c++interop.cpp",
+		"/C/Utilities/CrossBridge/samples/02_Interop/hellointerop.c",
+		"/C/Utilities/CrossBridge/samples/02_Interop/bitmapdata.cpp",
+		"/C/Utilities/CrossBridge/samples/01_HelloWorld/hello.c",
+		"/C/Utilities/CrossBridge/samples/02_Interop/Makefile",
+		"/D/sandbox/C++/test.cpp",
+		"/C/Users/CJ/Desktop/.htaccess",
+		"/C/Program Files (x86)/FlashDevelop/Templates/ProjectFiles/AS3Project/Interface.as.fdt"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 122.0,
+		"where_history":
+		[
+			"D:\\CJ docs\\programming\\C++\\study\\vulkan-study\\bat",
+			"D:\\CJ docs\\programming\\AS3\\lib\\LuaAlchemy\\git",
+			"C:\\Program Files (x86)\\FlashDevelop\\Templates",
+			"C:\\Program Files (x86)\\FlashDevelop\\Templates\\ProjectFiles\\AS3Project",
+			"C:\\Users\\CJ\\Documents\\PCSX2",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"debugflags",
+			"outputDir",
+			"outdir",
+			"outputdir",
+			"workingDir",
+			"working",
+			"startproject",
+			"FindDirectoriesRecursive",
+			"recursive",
+			"setupproj",
+			"sourcedir",
+			"\"C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\IDE\\devenv.com\"",
+			"solution/CS 550.sln",
+			"setupproj",
+			"configurations",
+			"allprojectincludedirs",
+			"sourcedir",
+			"tab",
+			"space",
+			"4",
+			"indent",
+			"tab",
+			"AS3LUA_METATABLE",
+			"check_as3userdata",
+			"as3_gets",
+			"gets",
+			"gests",
+			".as",
+			"\\",
+			"as3.get",
+			"AS3_GetS",
+			"as3_get",
+			"as3_trace",
+			"do_as3_get_and_autoconvert",
+			"luaL_reg",
+			"trace",
+			"as3.trace",
+			"do_as3_get_and_autoconvert",
+			"handlers",
+			"maybe_as3_get_and_autoconvert",
+			"is_mas3gaa_enabled",
+			"maybe_as3_tolua",
+			"module",
+			"as3.",
+			"definition",
+			"	",
+			".iso",
+			"include",
+			"output",
+			"includedirs",
+			"	",
+			"lib",
+			"direct",
+			"message",
+			"rootName",
+			"rootDir",
+			"pre",
+			"cmake",
+			"	",
+			"appProjName",
+			"libProjName",
+			"subdir",
+			"fileQueue",
+			"	",
+			"white",
+			"	",
+			"SetUpProj",
+			"setupproj",
+			"app",
+			"application"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"outDir",
+			"a",
+			"outputDir",
+			"\"%VSINSTALLDIR%/../Common7/IDE/devenv.com\"",
+			"sln/vulkan-study.sln",
+			"/",
+			"  ",
+			"projName",
+			"projDir",
+			"  projDir",
+			"  ",
+			"projName",
+			"dir",
+			"queue",
+			"  "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 184.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "vulkan-study.sublime-project",
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"typedefs",
+				"src\\core\\typedefs.h"
+			],
+			[
+				"premake",
+				"premake5.lua"
+			],
+			[
+				"main.cpp",
+				"src\\UnitTest\\main.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
