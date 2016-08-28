@@ -22,9 +22,9 @@ local unicodeApps =
 {
   
 }
--- Table of Library and Test projects to create.  These names should have the
+-- Table of static librar projects to create.  These names should have the
 --   same name as the folder the project's source code is located in.
-local libraries =
+local staticLibs =
 {
   "graphics"  , 
   "util", 
@@ -273,25 +273,25 @@ if _ACTION ~= nil then
       precompiledName = "precompiled"
       locationPath = projectDir
       if j == 1 then
-        --create client projects
+        --create windowed application projects
         appType = "WindowedApp"
         for _, proj in ipairs(winApps) do
           project(proj)
           SetUpProj(proj, appType, locationPath, precompiledName, sourceDir .. "/app/" .. proj, outDir)
         end
       elseif j == 2 then
-        --create library projects
-        appType = "StaticLib"
-        for _, proj in ipairs(libraries) do
-          project(proj)
-          SetUpProj(proj, appType, locationPath, precompiledName, sourceDir .. "/lib/" .. proj, outDir)
-        end
-      elseif j == 3 then
-        --create test projects
+        --create console applicatoin projects
         appType = "ConsoleApp"
         for _, proj in ipairs(consoleApps) do
           project(proj)
           SetUpProj(proj, appType, locationPath, precompiledName, sourceDir .. "/app/" .. proj, outDir)
+        end
+      elseif j == 3 then
+        --create library projects
+        appType = "StaticLib"
+        for _, proj in ipairs(staticLibs) do
+          project(proj)
+          SetUpProj(proj, appType, locationPath, precompiledName, sourceDir .. "/lib/" .. proj, outDir)
         end
       end -- if/else
     end -- outer for loop
