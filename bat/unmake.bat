@@ -3,7 +3,7 @@ cd ..
 
 :: remove solutionn folder
 echo Removing Visual Studio solution...
-if exist solution rmdir /Q /S solution
+if exist sln rmdir /Q /S sln
 echo Done.
 
 cd bat
