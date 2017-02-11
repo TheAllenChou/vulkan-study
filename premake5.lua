@@ -15,6 +15,7 @@ local winApps =
 local consoleApps =
 {
   "test", 
+  "triangle", 
 }
 -- Table of projects that use Unicode.  These names should have the
 --   same name as the folder the project's source code is located in
@@ -57,14 +58,12 @@ local debugFlags =
 {
   "Symbols",
   "NoMinimalRebuild",
-  "NoEditAndContinue",
   "WinMain"
 }
 local releaseFlags =
 {
   "Symbols",
   "NoMinimalRebuild",
-  "NoEditAndContinue",
   "WinMain"
 }
 local shipFlags =
@@ -86,18 +85,17 @@ local linkerOptions =
 -- Table of preprocessor definitions for different game configuration
 local debugDefines = 
 {
-  "_DEBUG",
+  "_DEBUG", 
   "_CRT_SECURE_NO_WARNINGS"
 }
 local releaseDefines =
 {
-  "_NDEBUG", 
   "_RELEASE", 
   "_CRT_SECURE_NO_WARNINGS"
 }
 local shipDefines = 
 {
-  "_NDEBUG", 
+  "NDEBUG", 
   "_SHIP", 
   "_CRT_SECURE_NO_WARNINGS"
 }
@@ -153,18 +151,18 @@ function SetUpProj(projName, projType, locPath, pchFile, fileDir, outDir)
   libdirs(libDirs)
   objdir(objDir)
   debugdir(debugDir)
-  
+  links(ReadDependencies(fileDir .. "/dependencies.txt"))
   linkoptions(linkerOptions)
   architecture("x64")
-  
+  includedirs(fileDir)
+
   -- recursively scan project directory
   directories = {fileDir}
   FindDirectoriesRecursive(directories, fileDir)
-  
-  -- "flattens" physical folders for current project
-  for _, folder in ipairs(directories)
-  do
-    includedirs({folder})
+
+  -- include library projects
+  for _, proj in ipairs(staticLibs) do
+    includedirs(sourceDir .. "/lib/" .. proj)
   end
   
   -- includes source folder for full include paths

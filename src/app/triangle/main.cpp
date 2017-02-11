@@ -6,19 +6,20 @@
  */
 /******************************************************************************/
 
-#pragma once
+#include "graphics/graphics.h"
 
-// GLFW
-#define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
+int main() {
+  InitWindow(800, 600, "Triangle");
 
-// Vulkan
-#include <vulkan/vulkan.h>
+  VkInstanceHandle hInstance;
+  InitVulkan(hInstance);
+  
+  while (!WindowShouldClose())
+  {
+    PollWindowEvent();
+  }
 
-// STL
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <memory>
-#include <stack>
-#include <vector>
+  DestroyWindow();
+
+  return 0;
+}

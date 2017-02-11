@@ -8,17 +8,17 @@
 
 #pragma once
 
-// GLFW
-#define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
-
-// Vulkan
-#include <vulkan/vulkan.h>
-
 // STL
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <memory>
-#include <stack>
+#include <cmath>
+#include <cstdlib>
+#include <cstdio>
+#include <string>
 #include <vector>
+#include <list>
+#include <map>
+#include <unordered_map>
+#include <deque>
+#include <queue>
+#include <iostream>
+#include <fstream>
+#include <memory>
