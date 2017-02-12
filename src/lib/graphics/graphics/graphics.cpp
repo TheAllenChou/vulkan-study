@@ -8,6 +8,8 @@
 
 #include "graphics/graphics.h"
 
+#include "util/macro-util.h"
+
 static GLFWwindow* s_pWindow = nullptr;
 
 void InitWindow(unsigned width, unsigned height, const char* title)
@@ -35,6 +37,32 @@ void DestroyWindow()
 
 static VkResult InitVulkanInstance(VkInstanceHandle& hInstance)
 {
+#ifdef NDEBUG
+  const bool useValidationLayers = false;
+#else
+  const bool useValidationLayers = true;
+#endif
+  
+  const char* aDesiredValidationLayers[] = 
+  {
+    "VK_LAYER_LUNARG_standard_validation"
+  };
+  const char* aFoundValidationLayers[ARRAY_COUNT(aDesiredValidationLayers)];
+  uint32_t numFoundValidationLayers = 0;
+  if (useValidationLayers)
+  {
+    uint32_t layerCount;
+    vkEnumerateInstanceLayerProperties(&layerCount, nullptr);
+
+    std::vector<VkLayerProperties> availableLayers(layerCount);
+    vkEnumerateInstanceLayerProperties(&layerCount, availableLayers.data());
+
+    for (const char* layerName : aDesiredValidationLayers)
+      for (const auto& layerProperties : availableLayers)
+        if (!strcmp(layerName, layerProperties.layerName))
+          aFoundValidationLayers[numFoundValidationLayers++] = layerName;
+  }
+
   unsigned glfwExtensionCount = 0;
   const char **glfwExtensions;
   glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
@@ -52,7 +80,8 @@ static VkResult InitVulkanInstance(VkInstanceHandle& hInstance)
   createInfo.pApplicationInfo = &appInfo;
   createInfo.enabledExtensionCount = glfwExtensionCount;
   createInfo.ppEnabledExtensionNames = glfwExtensions;
-  createInfo.enabledLayerCount = 0;
+  createInfo.enabledLayerCount = numFoundValidationLayers;
+  createInfo.ppEnabledLayerNames = aFoundValidationLayers;
 
   uint32_t vkExtensionCount = 0;
   vkEnumerateInstanceExtensionProperties(nullptr, &vkExtensionCount, nullptr);
@@ -61,50 +90,10 @@ static VkResult InitVulkanInstance(VkInstanceHandle& hInstance)
   return vkCreateInstance(&createInfo, nullptr, &hInstance);
 }
 
-static VkResult InitValidationLayers()
-{
-#ifdef NDEBUG
-  return VK_SUCCESS;
-#else
-  const std::vector<const char*> validationLayers =
-  {
-    "VK_LAYER_LUNARG_standard_validation"
-  };
-
-  uint32_t layerCount;
-  vkEnumerateInstanceLayerProperties(&layerCount, nullptr);
-
-  std::vector<VkLayerProperties> availableLayers(layerCount);
-  vkEnumerateInstanceLayerProperties(&layerCount, availableLayers.data());
-
-  for (const char *layerName : validationLayers)
-  {
-    bool layerFound = false;
-    for (const auto& layerProperties : availableLayers)
-    {
-      if (!strcmp(layerName, layerProperties.layerName))
-      {
-        layerFound = true;
-        break;
-      }
-    }
-    if (!layerFound)
-      return VK_ERROR_INITIALIZATION_FAILED;
-  }
-
-  return VK_SUCCESS;
-#endif
-}
-
 VkResult InitVulkan(VkInstanceHandle& hInstance)
 {
   if (const VkResult result = InitVulkanInstance(hInstance))
     return result;
-
-  if (const VkResult result = InitValidationLayers())
-  {
-    std::cout << "Failed to initialize validation layers." << std::endl;
-  }
 
   return VK_SUCCESS;
 }
