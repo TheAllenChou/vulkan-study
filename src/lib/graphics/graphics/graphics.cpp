@@ -41,8 +41,7 @@ static VkResult InitVulkanInstance(VkInstanceHandle& hInstance)
   const bool useValidationLayers = false;
 #else
   const bool useValidationLayers = true;
-#endif
-  
+
   const char* aDesiredValidationLayers[] = 
   {
     "VK_LAYER_LUNARG_standard_validation"
@@ -62,7 +61,8 @@ static VkResult InitVulkanInstance(VkInstanceHandle& hInstance)
         if (!strcmp(layerName, layerProperties.layerName))
           aFoundValidationLayers[numFoundValidationLayers++] = layerName;
   }
-
+#endif
+  
   unsigned glfwExtensionCount = 0;
   const char **glfwExtensions;
   glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
@@ -80,8 +80,12 @@ static VkResult InitVulkanInstance(VkInstanceHandle& hInstance)
   createInfo.pApplicationInfo = &appInfo;
   createInfo.enabledExtensionCount = glfwExtensionCount;
   createInfo.ppEnabledExtensionNames = glfwExtensions;
-  createInfo.enabledLayerCount = numFoundValidationLayers;
-  createInfo.ppEnabledLayerNames = aFoundValidationLayers;
+  createInfo.enabledLayerCount = 0;
+  if (useValidationLayers)
+  {
+    createInfo.enabledLayerCount = numFoundValidationLayers;
+    createInfo.ppEnabledLayerNames = aFoundValidationLayers;
+  }
 
   uint32_t vkExtensionCount = 0;
   vkEnumerateInstanceExtensionProperties(nullptr, &vkExtensionCount, nullptr);
